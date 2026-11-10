@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>კონტაქტი – მარცვალი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600&family=Noto+Serif+Georgian:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- ===== ნავიგაცია: იგივე ბლოკი ყველა გვერდზე ===== -->
+    <nav class="nav">
+      <div class="wrap nav-in">
+        <a class="brand" href="index.html">მარცვალი</a>
+        <div class="links">
+          <a href="about.html">ჩვენ შესახებ</a>
+          <a href="menu.html">მენიუ</a>
+          <a href="contact.html">კონტაქტი</a>
+          <a href="person.html">პერსონალი</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ===== ნავიგაციის დასასრული ===== -->
+
+    <header class="page-head">
+      <div class="wrap">
+        <h1>კონტაქტი</h1>
+        <p>მოგვაკითხეთ, დაგვირეკეთ ან მოგვწერეთ. სიამოვნებით გიპასუხებთ.</p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="wrap reach">
+          <div class="info">
+            <h2>როგორ მოგვაკითხოთ</h2>
+            <ul class="info-list">
+              <li><span>მისამართი</span>[თქვენი მისამართი]</li>
+              <li>
+                <span>ტელეფონი</span
+                ><a href="tel:+995000000000">+995 000 00 00 00</a>
+              </li>
+              <li>
+                <span>ელფოსტა</span
+                ><a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <span>სამუშაო საათები</span>
+                ორშაბათი – პარასკევი: 08:00–21:00<br />
+                შაბათი – კვირა: 09:00–22:00
+              </li>
+            </ul>
+
+            <!-- რუკის დასამატებლად Google Maps-იდან აიღეთ „Embed a map“ კოდი და ჩასვით აქ -->
+            <div class="map" role="img" aria-label="რუკის ადგილი">რუკა</div>
+          </div>
+
+          <form
+            class="form"
+            action="mailto:info@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <h2>მოგვწერეთ</h2>
+
+            <label for="name">სახელი</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+
+            <label for="email">ელფოსტა</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+
+            <label for="msg">შეტყობინება</label>
+            <textarea id="msg" name="message" rows="5" required></textarea>
+
+            <button class="btn" type="submit">გაგზავნა</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">© მარცვალი. ყველა უფლება დაცულია.</div>
+    </footer>
+  </body>
+</html>

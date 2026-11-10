@@ -1,0 +1,79 @@
+/* menu page */
+.links a[aria-current="page"] {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.page-head {
+  background: var(--deep);
+  color: var(--on-deep);
+  padding: clamp(48px, 8vw, 96px) 0;
+}
+.page-head p {
+  max-width: 50ch;
+  margin: 20px 0 0;
+  opacity: 0.85;
+}
+
+/* ზემოთ მიმაგრებული კატეგორიების ზოლი */
+.chips {
+  position: sticky;
+  top: 64px;
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.chips-in {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  scrollbar-width: none;
+}
+.chips-in::-webkit-scrollbar {
+  display: none;
+}
+.chips a {
+  flex: none;
+  padding: 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.chips a:hover {
+  background: var(--mint);
+  border-color: var(--mint);
+  color: #16221d;
+}
+
+html {
+  scroll-padding-top: 130px;
+}
+
+/* კატეგორიები */
+.cat {
+  padding: clamp(40px, 6vw, 64px) 0;
+}
+.cat.alt {
+  background: var(--alt);
+}
+.cat h2 {
+  margin-bottom: 20px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 64px;
+}
+.items li {
+  padding: 16px 0;
+}
+.note {
+  margin: 32px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}

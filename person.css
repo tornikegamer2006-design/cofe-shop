@@ -1,0 +1,95 @@
+/* person page */
+.links a[aria-current="page"] {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.page-head {
+  background: var(--deep);
+  color: var(--on-deep);
+  padding: clamp(48px, 8vw, 96px) 0;
+}
+.page-head p {
+  max-width: 50ch;
+  margin: 20px 0 0;
+  opacity: 0.85;
+}
+
+section {
+  padding: clamp(40px, 6vw, 72px) 0;
+}
+.alt {
+  background: var(--alt);
+}
+
+.staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  background: var(--bg);
+}
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: #16221d;
+  display: grid;
+  place-items: center;
+  font:
+    800 28px "Noto Serif Georgian",
+    serif;
+  margin-bottom: 16px;
+}
+.card h2 {
+  font:
+    700 22px "Noto Serif Georgian",
+    serif;
+  margin: 0;
+}
+.role {
+  margin: 2px 0 18px;
+  color: var(--muted);
+}
+
+.contact li {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+}
+.contact li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.contact span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.contact a {
+  word-break: break-word;
+}
+.contact a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.general h2 {
+  margin-bottom: 16px;
+}
+.general p {
+  margin: 0 0 6px;
+}
+.general a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
